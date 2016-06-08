@@ -26,7 +26,7 @@ export class HeroService {
 		headers.append("Content-Type", "application/json");
 
 		let url = `${this.heroesUrl}/${hero.id}`;
-console.log(url);
+
 		return this.http
 				.delete(url, headers)
 				.toPromise()
